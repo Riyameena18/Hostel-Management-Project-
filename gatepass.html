@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Pass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins",sans-serif ;
+        }
+        body{
+            background: url(https://getwallpapers.com/wallpaper/full/6/7/c/233765.jpg);
+            background-size: cover;
+        }
+        form{
+    height: 500px;
+    width: 420px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 50px 35px;
+    backdrop-filter: blur(10px);
+}
+
+form *{
+    color: white;
+    line-height: 42px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    width: 95%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+#div1{
+    float: left;
+}
+#div1 input{
+    width: 80%;
+}
+#div2{
+    float: right;
+}
+#div2 input{
+    width: 80%;
+}
+
+::placeholder{
+    color: aliceblue;
+}
+
+.submit{
+    margin-top: 20px;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    color: black;
+    padding: 2px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <form action="gatepass.do" method="post">
+        <h3>Gate Pass</h3>
+    <label for="studentName" >Student Name :</label>
+    <input type ="text" id ="studentName" name="studentName" placeholder="Enter your name" required/>
+    
+    <label for="mobileNo" >Mobile No :</label>
+    <input type ="text" id ="mobileNo" name="mobileNo" placeholder="Enter mobile no." required/>
+    
+    
+    
+    <label for="purpose" >Purpose :</label>
+    <input type ="text" id ="purpose" name="purpose" placeholder="Enter purpose of leaving" required/>
+    
+    <div id="div1"><label for="departureTime" >Departure Time :</label>
+        <input type ="datetime-local" id ="departureTime" name="departureTime" placeholder="Departure time" required/></div>
+    
+    <div id="div2"><label for="returnTime" >Return Time :</label>
+        <input type ="datetime-local" id ="returnTime" name="returnTime" placeholder="Return time" required/></div>
+    
+    <button type ="submit" class="submit">Submit Gate Pass</button>
+</form>
+    </body>
+    
+</html>

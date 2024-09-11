@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBUQEhAPEhAVFRUQEBUSEBAQFRESFRYXFxUVFRUYHyggGRolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABwgBBgIEBQP/xABEEAABAwIDBgIFCQUGBwAAAAABAAIDBBEFEiEGBzFBYXETUSIygZGhCBQjUmJygrHBM0KSstE1Q0VTlOEkNFVzoqPC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJxREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERdPEsShgYZJ5Y4mDUue4NCDuLi94AuSABqblRHtVvwporx0UTqh/DO68cQPDTm72aHzUQbT7c19cT49Q7w/8AKjvHEOmQet+K6Ce9q97uHUmZjHmrnFxkgILAftSn0QNLejmPRRVjG+zE5XkwmCmj/dayNsht1c8G57AKNSVhBJOFb6sUjeDK6CoZ+818TWG3Ozo7WPe/ZSnsrvhw+qsyVxo5jplmI8Mn7Mw0/iDVWNZQXfjkDgHNIIOoIIII6FclT/ZrbSuoSPm9Q9rOcTiXxH8B4dxYqXtlt+UElmV0RgfwMkd3xk6cR6zfy6oJiRdLC8VgqGCSCaOVh1uxwcu7dAREQEREBERAREQEREBERAREQEREBeDtLthRULb1NRGx3ERg55HacmDX2mwXpYxTySQSRxSGKVzHNjkHFjiLAqqe12xOIUby6pifIHOJ8ZhMoedSSXcb2BJug3zanfnK+7KGERN4CWb0n9wwaBRVjGN1FU/xKieSZ323EgdhwC89YQZKwiICIiAiIgIiIO/hWMT0zxJTzSQvHNjiL9xwKlPZbfnMyzK6ETN4eJFZjx1LeBUPWSyC32zO2tDXAfNqhjn2uY3ehIPwHU9xdbFdVF2X2IxCscHU8EgaCPpX3iY08bhx/RWq2fopYaWKGeXxpmMa2SQ8XuHPr36IPRREQEREBERAREQEREBERAREQYcoU3oYzikeNU8NOxxi0+aNDA5tQXsyzB9+OhIIPAa9VNZCjbb2sy49gzbn1qj/ANjWx/1Qd3abdXh9YC/wvm051L4LNGbndvAqu+22zxoKx9IZBJksQ4DLcO1GnmrhgKrm/D+2Zvux/kg0JERAREQEREBERB7WyWBmtrIqRsgjMhy5i0uDdL8FYnZbdLh9JZ7mGpmGuebUA9GcAoP3P/2zS/eP5K16DhHGGgNAAA0AAAA7ALmiICIiAiIgIiICIiAiIgIiICIiAoX3qVeXaPCvJphcfx1BB+AU0FV330VdtoID/lNpj2+kz/qgsOqs77JA7GZ7G9gxp6EBWmVP9v6wTYpVyjgZnD+H0f0Qa8i9rZbZmpr5/m9MzM62Z7joyNv1nu5D4lb5jm4ytijD4JoqlwF3ssYXX8mFxId7SEEUou1iOHTQSGKeKSGQcWyMcw287HiNDrwXVQEWbLsUNBLNIIoYpJZDwZG0vcfYEHXssKWNmdx9XMA+rkZSttcMFpZD3screXmtN282Plw2q8CR2eNwzwyhthI3gdORB0IQct2VaIcWpHu9XxQ0/i0/Mq3QVKMJky1ETvqyxu9zgVdOmfmY13m0H3i6D6IiICIiAiIgIiICIiAiIgIiICIiAVV/fVPfHZT9UQN9zGqz5Vft72y8kmP04YDat8JrTbQFhDJPcLOPdBNOL45FT0Rq53hkYjDi43PpOaMoAGpJJsqf182eV79Tme938TiVP/yhpDHhsEbdGmdrCPstjcQPeAo+3NbF0+JS1HznPkhbGWhrsuZ0hdqTztk4dUEz7p9lm0OGxtLbVEwE9Qba5nC7WfhaQO9zzW5hqNCyg87GcDpqqPwqmCKZmtg9gOUnm08WnqCCo0xfcPRveXU9TPTtOuRzWztb0aSQ63clS4iCIcK3DUjHh09VPO0a5GsZAHdHEFxt2IPVSXgeAUtJH4dNTxQs55G2LrcC93rPPUkr00QYstC3z7OCrwuR4beamvUxHnlb+1b2LAT3aFvy4SxhzS0i7SC0jzB0KCk1K4CRpPAOaT2uCVczAa+OamilieHxujaWuHMWCrnvi2Igw2Wn+bl/hSsfcPdmIfHlub9Q8e5SluDnc7CA0nRssgb2LroJKREQEREBERAREQEREBERAREQFwedbLmvk71ggZT5iy6tXh0MkkU742ulhzmBxvdhkbkfbu3RdqY8AskiyDQ982BGqw02cAYpGzA2JsPVJ9zitK+T3M2GrraRzgZC2N7TwzNYSHe7O33qa5oWyRuieLtcCxw8wVWra3Ca3BcTbVxuGUyOdTv9Zr229KORvUaEe3RBZ4LK0zdlticSozM9rGTMkdFK1l7DnGRfWxaQO4K3BrkHNF8y5csyDki+eZcs6DksXWA5abvP20OGUrZmsa+aSQRxscSARa73aeQsPaEEa/KPxFrqmlpgfSjjkleP+4QG+36N2nXqpG3NYYYMHgDhZ0maY6W0kJIBHayhvZPZyox3EJaud1os7X1Djr5ZYWD7osOgVloI2ta1jRZrQGtA5ACwCD7IuOZYzIOaLAKygIiICIiAiIgIiICIiAvmR6QX0XEtQfE8z7lzLfR7armGrgG2N0HFp1HktQ3qbNGuw6VjG3nj+ng8y5o9Jo7j42W4tYuWVBWnc5tK2hqmxym0VWcjyTYMym0TiPvZwrJhVx31bFmjqjWQtPzSdxdpe0MxN3N6NJu5vLiOQUhbnNvxVwiiqHj55E2zCdPHjHAj7QGhQSWsrnlWcqD5cllfTKlkHzHu7qtO9ra81eIERjPSw/QRgtu2RwPpuHc6ewKRt9G34pYTQ07waqUWkcD+wjI1/GeHbVaTuO2RkqagVcucUkDs0bSSGzVA9UW5tboT1sPNBLm7fZoUOHsiLMsr/p5geLXvscl/siwW1L6ZUyoPn/shX0yplQYYuaxZZQEREBERAREQEREBERAREQEREBERB0McwmGqgfTTsD4pBlcPyIPIjiFV7bTZKqwirDmuk8PNmpahml7ciRweOY5q166WMYXDUxOgnjbLE4WLXC/tHkeqCK9gd88UjWwYgRDKLATAfRydX/UPwUs0ldHK0OikjkadQWODtPYoF2x3I1EbjJh7vHi4+C9zWSs6NcbNeOPMHlqo6qMOr6Ulroa2m1N7sniHcG1iOqC31bXxRNLpZY42jW73Nbp7VEu32+aNjXQYcRLKRYzkfRs8yz654dFDdNhtfVkNZFW1B6MmlA7k3A7qR9jNyM8hbLiDvAjvfwWOa+V48nOHosB04EnloUGpbD7H1OLVRe5z/CzZqmd1zfzDTzcfgrQ4PhcVNAynhYGRRtDWgfmepWcKwyGnibDBGyOJos1rRYf7nqu2gyiIgIiICIiAiIgIiICIiAiIgIiICw5ZK1beBtjHhtL4z/SlfdkEd7Z324nyaNCT280Hc2o2spaCPxKmUMv6rB6T3nya0ce6iHG9/U5JFJSRsb+66dzpHEfcZYNP4iopx3Gp6uZ1RUSF8jjz4NHJrRyaPJecg3qs3uYw83FWIx9WOCAAdiWk/FedPvDxV/HEKofdf4f8oC1ZEEy7qN6ngk0mITSPY52aKole6Qxk2u2Rztch4g8rnlwninna9oexzXtOoLSCCO4VIl7mz+1lbRn/AIapkjb9S+Zh/CdB7EFxkVd8N37VrABNT08x5kZojbsLr3Yd/wBHb06GS/2ZW/qgmtFCsu/6L92hlv1lb+i8fEd/FW4EQ0sEZ5Oc50h9o4IJ/fIGgkkADUk6Ae1Q1vb3pMbG6ioJSZXG008biBEAfVjcOLz5jgPhFW0O3OIVlxPVPLD/AHbD4bO1hxHcrWyg2Wm2/wAUZo3EavT68pk/nuvSpd7GMMP/ADpePJ8MDr+3Lf4rR0QTBg+/mqaQKmmglbwvEXQutzNnZgT00UtbH7d0eIt+gkIlGropLNkb7OY6gkKoq7NDXSQyNlie6OVhDmOabEEfoguyi0PdXt43EoMklm1kQHjNHB44CRo8iePkVviAiIgIiICIiAiIgIiIOL3AAkkAAXJOlgOJVSd5O1TsRr5J7nwGExUw1sImk2db6ztXHvbkp531Y981wuRrTaWo/wCHZ5hrv2h/h0/EquoMIiICIiAiIgIiICIiAiIgIiICIiD2Nl8ekoaqOri9aM6tJIEjDo9juhFx0Nirf4XXMnhjnidmikY2Rh82uFxfr+qpQrEfJ5x7xaKSjefSp3Zo9f7qQ3t2Dr/xIJaREQEREBERAREQERCggH5SFa41NNBc5Gxukt9pzrX9wChtTx8orAHvjhrmAuEd4ZrD1WuN2uPS+igiyDCIiAiIgIiICIiAiIgIiICIiAiIgKSNwlY5mLtYCcssUjX9bDMPiFHFlLvyesBe+skrnNIiiYYmOto6R+hA7BBYRERAREQEREBERAREQfGqpmyMdG9rXscC1zXAEOB5Ec1CO2+5J2YzYc4Fp1MEjrFvn4b+Y4aH3qdEKCluL4NUUr/DqIJYXcBnaQD913AjsvPV26qkjkaWSRskadC17Q4HuDotNxfdPhM9z818Fx0zU73RW7MHofBBVayFT1iO4CE/sK+VnSaFk1/a0s/Ja9Wbh8QaT4VRRSD7Tpo3H2ZSPigiZFv9TucxhvCmjk+5UQ//AE4FedNuzxdvHD5/wmN/8rig1FFsj9gsUH+HVvsgefyXxOxWJD/Dq3/Ty/0QeCi94bF4l/06t/08v9F9GbB4oeGG1vtgePzCDXUW2Q7tsXdww+oH3sjP5iF6NNufxh3GlYz79RTj4NcSg0JFKtHuJxF2sk1FGOf0kr3e4Mt8VsOHbgGA3nxB7h9WGBrP/JznfyoIJXZw/D5p3iOGKSV5/djYXnubcArNYTuewmGxMElQ4cDUSuf72NytPuW6UGGwwNyQwxRMHBsbGxgexqCBtjtylRKWyVzvAi0PhMIdK4eTncG/H2Kd8JwyKmiZBBG2OJgyta38z5nqu4AsoCIiAiIgIiICIiAiIgIiICIiAiIgwQlllEGLLKIgwiyiDCLKICIiAiIgIiIMXS66mItmLW+CWB2ducu/y7+mB1twXk2xA5f2Yt4JeCW3dYyeKGm2hI8M36FBsN0BXgQQ1pHpOykAc4zmdkN/3eGa3u62Xaoo6lsozuzxkPzerofQycB0f7wg9ZFiyIMoiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgwsN591hEGQshEQYREQf/Z">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins",sans-serif ;
+        }
+        body{
+            background: url(https://getwallpapers.com/wallpaper/full/6/7/c/233765.jpg);
+            background-size: cover;
+        }
+        form{
+    height: 300px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 50px 35px;
+    backdrop-filter: blur(10px);
+}
+
+form *{
+    color: white;
+    line-height: 42px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    width: 95%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: aliceblue;
+}
+
+.submit{
+    margin-top: 20px;
+    width: 100%;
+    height: 16%;
+    background-color: white;
+    color: black;
+    padding: 2px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <form action="information.do" method="post">
+        <h3>Student Information</h3>
+    <label for="studentName">Student Name :</label>
+    <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+    
+    <label for="studentRoomNo">Student Room No :</label>
+    <input type="text" id="studentRoomNo" name="studentRoomNo"  placeholder="Enter student room no." required>
+    
+    <button type="submit" class="submit">Search</button>
+    </form>
+    </body>
+    
+</html>

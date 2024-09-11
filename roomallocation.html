@@ -1,0 +1,117 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Allocation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="icon" href="https://cdn5.vectorstock.com/i/1000x1000/73/24/office-room-flat-icon-vector-10487324.jpg">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins",sans-serif ;
+        }
+        body{
+            background: url(https://getwallpapers.com/wallpaper/full/6/7/c/233765.jpg);
+            background-size: cover;
+        }
+        form{
+    height: 400px;
+    width: 380px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 50px 35px;
+    backdrop-filter: blur(10px);
+}
+
+form *{
+    color: white;
+    line-height: 42px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    width: 95%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+#div1{
+    float: left;
+}
+#div1 input{
+    width: 70%;
+}
+#div2{
+    float: right;
+}
+#div2 input{
+    width: 80%;
+}
+
+::placeholder{
+    color: aliceblue;
+}
+
+.submit{
+    margin-top: 20px;
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    color: black;
+    padding: 1px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body> 
+<form action="allocate.do" method="post">
+    <h3>Room Allocation</h3>
+    <label for="studentName" >EnrollmentNo :</label>
+<input type ="text" id ="studentName" name="enrollmentNo" placeholder="Enter Student name" required/>
+<label for="studentName" >Student Name :</label>
+<input type ="text" id ="studentName" name="studentName" placeholder="Enter Student name" required/>
+
+<label for="mobileNo" > Student Mobile No :</label>
+<input type ="text" id ="mobileNo" name="mobileNo" placeholder="Enter Student mobile no." required/>
+<div id="div1">
+<label for="roomNumber">Room Number :</label>
+<input type ="number" id ="roomNumber" name="roomNumber" placeholder="Enter room no." required/>
+</div><div id="div2">
+<label for="checkInDate" >Check In Date :</label>
+<input type ="date" id ="checkInDate" name="checkInDate" placeholder="Enter Check In date" required/>
+</div>
+<button class="submit">Allocate Room</button>
+    </form>
+</body>
+</html>

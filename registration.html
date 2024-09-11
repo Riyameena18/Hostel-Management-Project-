@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<link rel="icon" href="https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    body{
+        background: url(https://getwallpapers.com/wallpaper/full/6/7/c/233765.jpg);
+        background-size: cover;
+        color: white;
+    }
+    .registration-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 100%;
+    }
+    .registration-form h2{
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+    .registration-form p{
+      font-size: 18px;
+      margin: 8px 0;
+    }
+    .registration-form input{
+        font-size: 16px;
+        padding: 5px 10px;
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        outline: none;
+    }
+    .registration-form select{
+        width: 100%;
+        padding: 5px 10px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .registration-form button{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 15px;
+        width: 50%;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 8px 100px;
+    }
+    .registration-form button:hover{
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+    ::placeholder{
+        font-size: 14px;
+        color: black;
+    }
+</style>
+</head>
+<body>
+<div class="registration-form">
+    <h2>Register Here</h2>
+<form action="register.do" method="post">
+     <p><label for="student name"> Student Name : </label></p>
+        <input type="text" id="student name" name="studentName" placeholder="Enter your full name" required/>
+        <p><label for="Student mobile no."> Student mobile no. : </label></p>
+        <input type="text" id="Student mobile no." name="mobileNo" placeholder="Enter your mobile no." required/>
+        <p><label for="father name"> Father's Name : </label></p>
+        <input type="text" id="father name" name="fatherName" placeholder="Enter your father's name" required/>
+        <p><label for="Father mobile no."> Father's mobile no. : </label></p>
+        <input type="text" id="Father mobile no." name="fatherNo" placeholder="Enter your father's mobile no." required/>
+         <p><label for="Branch">Branch : </label></p>
+         <select name = "Branch" id="Branch" name="Branch" required>
+         <option selected disabled>Branch</option>
+         <option>CSE</option>
+         <option>AIML</option>
+         <option>EC</option>
+         <option>CSIT</option>
+         <option>ME</option>
+         <option>CE</option>
+         <option>CY</option>
+         <option>EX</option>
+         <option>D.PHARMA</option>
+         <option>B.PHARMA</option>
+         <option>M.PHARMA</option>
+         <option>MBA</option>
+         <option>MCA</option></select>
+         <p><label for="Year">Year : </label></p>
+         <select name = "Year" id="Year" name="Year" required>
+          <option selected disabled>Year</option>
+         <option>1st</option>
+         <option>2nd</option>
+         <option>3rd</option>
+         <option>4th</option>
+         </select>
+        <p><label for="Email id"> Student's Email ID : </label></p>
+        <input type="email" id="Email id" name="studentEmailId" placeholder="Enter your email id" required/>
+        <p><label for="Father's Email id"> Father's Email ID : </label></p>
+        <input type="email" id="Father's Email id" name="fatherEmailId" placeholder="Enter your father's email id" required/>
+        <p><label for="Date of birth"> Date of Birth : </label></p>
+        <input type="date" id="Date of birth" name="dateOfBirth" placeholder="Enter your date of birth" required/>
+       <p><label for ="Address"> Address :</label></p>
+        <textarea rows="3" cols="61" name="address" placeholder="Enter your permanent address" id="Address" required></textarea>
+        <p><label for ="Password">Password :</label></p>
+        <input type = "password" name="secret" placeholder="Set your password here" id="Password" required/>
+        <p><button class="login">Submit</button></p>
+        </form>
+    </div>
+</body>
+</html>
